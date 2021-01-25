@@ -21,8 +21,8 @@ The bug is that the default weight of a tomato is 3.0 kg which is terribly high.
 
 We can correct this by putting a more sensible value such as 0.3 kg
 
-'''
+```
 class Tomato(Fruit, Vegetable):
     def __init__(self, name='Tomato', weight_kg=0.3):
         super().__init__(name=name, weight_kg=weight_kg)
-'''
+```
