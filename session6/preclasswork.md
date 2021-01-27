@@ -66,3 +66,39 @@ The vars() function returns the `__dic__` attribute of an object. The `__dict__`
 ### 10 `bool(t)`
 
 Returns true
+    
+
+
+## Question 2
+
+List of classes and from which they inherit:
+
+class BaseRotatingHandler(logging.FileHandler)
+class RotatingFileHandler(BaseRotatingHandler)
+class TimedRotatingFileHandler(BaseRotatingHandler)
+class WatchedFileHandler(logging.FileHandler)
+class SocketHandler(logging.Handler)
+class DatagramHandler(SocketHandler)
+class SysLogHandler(logging.Handler)
+class SMTPHandler(logging.Handler)
+class NTEventLogHandler(logging.Handler)
+class HTTPHandler(logging.Handler)
+class BufferingHandler(logging.Handler)
+class MemoryHandler(BufferingHandler)
+class QueueHandler(logging.Handler)
+
+
+
+
+Choosing class SocketHandler that inherits from logging.handler
+
+Methods:
+
+makeSocket
+createSocket
+send
+makePickle
+handleError
+emit
+close
+

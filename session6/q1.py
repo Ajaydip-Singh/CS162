@@ -10,5 +10,3 @@ class ClassWithAttr(object):
 my_attr = ClassWithAttr()
 my_attr.x3 = 3
 
-
-print(bool(t))
