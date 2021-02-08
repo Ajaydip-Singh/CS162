@@ -7,7 +7,7 @@ class TestClock(unittest.TestCase):
         c = 1
         for time in clock:
             if c == 1:
-            result = time
+                result = time
         self.assertEqual(result, '00:00')
 
 
@@ -16,7 +16,8 @@ class TestClock(unittest.TestCase):
         c = 1
         for time in clock:
             if c == 60:
-            result = time
+                result = time
+            c += 1
         self.assertEqual(result, '00:59')
 
 
@@ -25,7 +26,8 @@ class TestClock(unittest.TestCase):
         c = 1
         for time in clock:
             if c == 61:
-            result = time
+                result = time
+            c += 1
         self.assertEqual(result, '01:00')
 
 
@@ -34,7 +36,8 @@ class TestClock(unittest.TestCase):
         c = 1
         for time in clock:
             if c == 60:
-            result = time
+                result = time
+            c += 1
         self.assertEqual(result, '23:59')
         
 
@@ -43,5 +46,6 @@ class TestClock(unittest.TestCase):
         c = 1
         for time in clock:
             if c == 1441:
-            result = time
+                result = time
+            c += 1
         self.assertEqual(result, '00:00')
