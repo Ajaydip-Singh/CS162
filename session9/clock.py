@@ -7,11 +7,7 @@ class ClockIterator:
         return self
 
     def __next__(self):
+        time = self.time.strftime('%H:%M')
         self.time += datetime.timedelta(minutes=1)
-        return self.time.strftime('%H:%M')
+        return time
 
-
-clock = ClockIterator()
-
-for time in clock:
-    print(time)

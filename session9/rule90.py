@@ -22,14 +22,15 @@ class Rule90(AbstractSimulation):
         new_state = []
 
         for i in range(len(self.state)-2):
-            vals = ''.join(self.state[i:i+3])
-            window = self._rules[vals]
+            stride = ''.join(self.state[i:i+3])
+            window = self._rules[stride]
             new_state.append(window)
 
 
         self.state = new_state
 
     def print_sim_state(self):
+        # this could be better
         print(''.join(self.state))
 
 sim = Rule90(10)
