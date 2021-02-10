@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 800px;
+  border: black;
+  border-width: thick;
+  border-style: solid;
+  border-radius: 1%;
+}
+
+
+h1,
+h2 {
+    text-align: center;
+}
+
+li {
+    font-size: large;
+    font-weight: 100;
+    background-color: blanchedalmond;
+    padding: 20px;
+}
+
+
+</style>
+
+</head>
+<body>
+
+<h1>Simple Static Kanban Board</h1>
+
+<div class="row">
+  <div class="column" style="background-color:rgb(211, 182, 182);">
+    <h2>To Do</h2>
+    <ol>
+        <li>Dummy Task</li>
+    </ol>
+  </div>
+  <div class="column" style="background-color:rgb(112, 173, 173);">
+    <h2>Doing</h2>
+    <ol>
+        <li>Dummy Task</li>
+    </ol>
+  </div>
+  <div class="column" style="background-color:rgb(127, 196, 127);">
+    <h2>Done</h2>
+    <ol>
+        <li>Dummy Task</li>
+    </ol>
+  </div>
+</div>
+
+</body>
+</html>
