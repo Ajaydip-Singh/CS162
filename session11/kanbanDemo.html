@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: 500px;
+  border: black;
+  border-width: thick;
+  border-style: solid;
+  border-radius: 1%;
+  margin: auto;
+  margin-left: 80px;
+}
+
+
+h1,
+h2 {
+    text-align: center;
+}
+
+li {
+    font-size: large;
+    font-weight: 100;
+    background-color: blanchedalmond;
+    padding: 20px;
+}
+
+form {
+  /* Center the form on the page */
+  margin: 0 auto;
+  margin-bottom: 50px;
+  width: 500px;
+  /* Form outline */
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+}
+
+label {
+  /* Uniform size & alignment */
+  display: inline-block;
+  width: 200px;
+  text-align: left;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+input,
+textarea {
+  /* To make sure that all text fields have the same font settings
+     By default, textareas have a monospace font */
+  font: 1em sans-serif;
+
+  /* Uniform text field size */
+  width: 300px;
+  box-sizing: border-box;
+
+  /* Match form field borders */
+  border: 1px solid #999;
+}
+
+input:focus,
+textarea:focus {
+  /* Additional highlight for focused elements */
+  border-color: #000;
+}
+
+button {
+  /* This extra margin represent roughly the same space as the space
+     between the labels and their text fields */
+  margin-left: .5em;
+}
+
+</style>
+
+</head>
+<body>
+
+<h1>Simple Static Kanban Board</h1>
+<form action="" method="POST">
+  <ul>
+    <li>
+      <label for="task">Task Title:</label>
+      <input type="text" name="task_title" id="task">
+    </li>
+    <li>
+      <label for="task_desc">Task Description:</label>
+      <textarea id="task_desc" name="task_description"></textarea>
+    </li>
+    <li class="button">
+      <button type="submit">Add card</button>
+    </li>
+  </ul>
+</form>
+<div class="row">
+  <div class="column" style="background-color:rgb(211, 182, 182);">
+    <h2>To Do</h2>
+    <ol>
+        <li>Dummy Task</li>
+    </ol>
+  </div>
+  <div class="column" style="background-color:rgb(112, 173, 173);">
+    <h2>Doing</h2>
+    <ol>
+        <li>Dummy Task</li>
+    </ol>
+  </div>
+  <div class="column" style="background-color:rgb(127, 196, 127);">
+    <h2>Done</h2>
+    <ol>
+        <li>Dummy Task</li>
+    </ol>
+  </div>
+</div>
+
+</body>
+</html>
