@@ -1,0 +1,12 @@
+CONTAINER ID   IMAGE                COMMAND           CREATED         STATUS         PORTS                    NAMES
+81cad4096cc4   simple-cs162-flask   "python app.py"   3 seconds ago   Up 3 seconds   0.0.0.0:5000->5000/tcp   simple-cs162-instance
+
+
+Q2
+
+It does not persist data. When the container is stopped and restarted all the expansions in the app are lost.
+
+Q3
+
+The benefit is that we can securely pass in configuration to the app without having this critical information exposed in our repo. The .env file should not be committed and this is great for security reasons.
+
