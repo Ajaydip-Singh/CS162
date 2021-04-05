@@ -1,0 +1,23 @@
+version: "3.3"
+
+services:
+  web:
+    build: .
+    ports: 
+      - 5001:5000
+    networks: 
+      - testnet
+    
+  db:
+    image: postgres:alpine
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_DB: "cs162"
+      POSTGRES_USER: "cs162_user"
+      POSTGRES_PASSWORD: "cs162_password"
+    networks:
+      - testnet
+
+networks: 
+  testnet:
